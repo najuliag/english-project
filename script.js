@@ -1,33 +1,33 @@
 const questions = [
     {
-        question: "What does CPU mean?",
-        options: ["Central Processing Unit", "Computer Power Utility", "Control Program Unit", "Core Process Usage"],
-        correct: 0,
-        explanation: "CPU significa Central Processing Unit, o 'cérebro' do computador."
+    question: "O que é FRONTEND?",
+    options: ["Parte lógica do sistema", "Banco de dados", "Interface visual do usuário", "Rede de internet"],
+    correct: 2,
+    explanation: "Frontend é a parte visível da aplicação, tudo com o que o usuário interage."
     },
     {
-        question: "What is a MOUSE?",
-        options: ["A storage device", "An input device", "A type of software", "A network cable"],
+        question: "O que é BACKEND?",
+        options: ["Design da aplicação", "Parte lógica e estrutural do sistema", "Somente o banco de dados", "Apenas a interface gráfica"],
         correct: 1,
-        explanation: "Mouse é um dispositivo de entrada usado para controlar o cursor."
+        explanation: "Backend é onde ficam as regras de negócio, lógica e acesso ao banco de dados."
     },
     {
-        question: "What does RAM stand for?",
-        options: ["Random Access Memory", "Run Access Mode", "Remote Active Memory", "Rapid Application Module"],
-        correct: 0,
-        explanation: "RAM é uma memória de acesso rápido usada pelo sistema para tarefas temporárias."
-    },
-    {
-        question: "What is SOFTWARE?",
-        options: ["Physical parts of a computer", "Programs and applications", "Internet connection", "Data cables"],
+        question: "O que é um BUG?",
+        options: ["Atualização do sistema", "Erro ou falha no sistema", "Novo recurso", "Tipo de hardware"],
         correct: 1,
-        explanation: "Software são programas, aplicativos e sistemas que rodam no computador."
+        explanation: "Bug é um erro que causa comportamento inesperado na aplicação."
     },
     {
-        question: "What is a PASSWORD used for?",
-        options: ["To delete accounts", "To protect access", "To install apps", "To update software"],
+        question: "O que é um DATABASE?",
+        options: ["Um navegador", "Armazenamento organizado de dados", "Uma linguagem de programação", "Um servidor web"],
         correct: 1,
-        explanation: "Passwords são usadas para proteger acesso a contas e dispositivos."
+        explanation: "Database é onde os dados são armazenados e consultados."
+    },
+    {
+        question: "O que é DEPLOYMENT?",
+        options: ["Modo de teste do sistema", "Publicação de um sistema", "Erro no servidor", "Instalação de drivers"],
+        correct: 1,
+        explanation: "Deployment é o processo de colocar a aplicação no ar para uso real."
     },
     {
         question: "What does WI-FI provide?",
@@ -48,10 +48,10 @@ const questions = [
         explanation: "URL é o endereço de um site na internet."
     },
     {
-        question: "What is a KEYBOARD?",
-        options: ["An output device", "A networking tool", "An operating system", "An input device"],
-        correct: 3,
-        explanation: "Keyboard (teclado) é um dispositivo de entrada usado para digitar."
+        question: "What is SOFTWARE?",
+        options: ["Physical parts of a computer", "Programs and applications", "Internet connection", "Data cables"],
+        correct: 1,
+        explanation: "Software são programas, aplicativos e sistemas que rodam no computador."
     },
     {
         question: "What does APP refer to?",
@@ -138,9 +138,9 @@ const questions = [
             resultScreen.classList.remove('hidden');
             scoreDisplay.textContent = `${score} / ${questions.length}`;
             
-            if(score === 10) finalMessage.textContent = "Perfeito! Você domina o Simple Present!";
+            if(score === 10) finalMessage.textContent = "Perfeito! Você domina os termos técnicos!";
             else if(score >= 7) finalMessage.textContent = "Muito bom! Continue praticando.";
-            else finalMessage.textContent = "Não desista! Revise as regras e tente de novo.";
+            else finalMessage.textContent = "Não desista! Revise e tente de novo.";
         }
 
         function restartQuiz() {
