@@ -83,10 +83,90 @@
             margin-top: 20px;
             padding: 15px;
             border-radius: 8px;
-            background-color: #f8f9fa;
-            border-left: 5px solid var(--primary);
-            text-align: left;
-            font-size: 0.95em;
-        }
+    background-color: #f8f9fa;
+    border-left: 5px solid var(--primary);
+    text-align: left;
+    font-size: 0.95em;
+}
         
-        #score-display { font-size: 3em; font-weight: bold; color: var(--primary); display: block; margin: 20px 0; }
+#score-display { font-size: 3em; font-weight: bold; color: var(--primary); display: block; margin: 20px 0; }
+
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Celulares grandes (até 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .option-btn {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* Celulares pequenos (até 400px) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    #score-display {
+        font-size: 2.3em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .btn, .option-btn {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .options-grid {
+        gap: 8px;
+    }
+}
+
+/* Ajuste para telas muito altas */
+@media (max-height: 500px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}
